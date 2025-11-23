@@ -169,7 +169,7 @@ All credentials go into **Google Apps Script → Project Settings → Script Pro
 ```
 Property Name                Value Arun Provides
 =====================================================================================================
-ANTHROPIC_API_KEY            sk-ant-api03-xxxxxxxxxxxxxxxxx (from Anthropic console)
+CLAUDE_API_KEY            sk-ant-api03-xxxxxxxxxxxxxxxxx (from Anthropic console)
 OPENAI_API_KEY              sk-proj-xxxxxxxxxxxxxxxxx (from OpenAI platform)
 WP_SITE_URL                 https://innovativeautomations.dev (his WordPress URL)
 WP_USERNAME                 arun (his WordPress username)

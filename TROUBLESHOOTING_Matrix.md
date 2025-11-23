@@ -28,7 +28,7 @@ Use this matrix to quickly diagnose and fix common issues.
 3. Scroll to "Script Properties"
 4. Verify these exist:
    ```
-   ANTHROPIC_API_KEY
+   CLAUDE_API_KEY
    OPENAI_API_KEY
    WP_SITE_URL
    WP_USERNAME
@@ -113,7 +113,7 @@ Use this matrix to quickly diagnose and fix common issues.
    - Create new API key
    - Copy new key
    - Update Script Properties:
-     - `ANTHROPIC_API_KEY` = new key (starts with `sk-ant-`)
+     - `CLAUDE_API_KEY` = new key (starts with `sk-ant-`)
 
 3. **Check Account Status:**
    - Verify billing info is current
@@ -658,7 +658,7 @@ Use this checklist when troubleshooting:
 
 ### Configuration Verification
 
-- [ ] `ANTHROPIC_API_KEY` starts with `sk-ant-`
+- [ ] `CLAUDE_API_KEY` starts with `sk-ant-`
 - [ ] `OPENAI_API_KEY` starts with `sk-`
 - [ ] `WP_SITE_URL` has no trailing slash
 - [ ] `WP_SITE_URL` starts with `https://`

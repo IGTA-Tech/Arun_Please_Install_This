@@ -93,7 +93,7 @@ Before starting, ensure you have:
 
    | Property Name | Value | Where to Get It |
    |--------------|-------|-----------------|
-   | `ANTHROPIC_API_KEY` | `sk-ant-api03-...` | https://console.anthropic.com → API Keys |
+   | `CLAUDE_API_KEY` | `sk-ant-api03-...` | https://console.anthropic.com → API Keys |
    | `OPENAI_API_KEY` | `sk-proj-...` | https://platform.openai.com → API Keys |
    | `WP_SITE_URL` | `https://innovativeautomations.dev` | Your WordPress URL (NO trailing slash) |
    | `WP_USERNAME` | Your WordPress admin username | Your WP login username |
