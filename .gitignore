@@ -1,0 +1,40 @@
+# Google Apps Script
+.clasp.json
+.claspignore
+
+# Environment and credentials
+.env
+.env.local
+*.key
+*credentials*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.backup
+*.bak
+
+# Node modules (if using clasp)
+node_modules/
+
+# Private notes
+NOTES.md
+TODO.md
