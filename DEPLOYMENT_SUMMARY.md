@@ -393,7 +393,7 @@ Google Drive          Google Sheets         Script Properties
 
 ### Configuration
 
-- [ ] Script Properties: ANTHROPIC_API_KEY
+- [ ] Script Properties: CLAUDE_API_KEY
 - [ ] Script Properties: OPENAI_API_KEY
 - [ ] Script Properties: WP_SITE_URL
 - [ ] Script Properties: WP_USERNAME
