@@ -15,7 +15,7 @@
  * LICENSE: Proprietary
  *
  * REQUIRED SCRIPT PROPERTIES (Project Settings → Script Properties):
- * - ANTHROPIC_API_KEY: Claude API key (sk-ant-...)
+ * - CLAUDE_API_KEY: Claude API key (sk-ant-...)
  * - OPENAI_API_KEY: OpenAI API key (sk-...)
  * - WP_SITE_URL: WordPress URL (https://innovativeautomations.dev)
  * - WP_USERNAME: WordPress admin username
@@ -39,7 +39,7 @@ function getConfig() {
 
   const config = {
     // API Keys (from Script Properties)
-    ANTHROPIC_API_KEY: scriptProps.getProperty('ANTHROPIC_API_KEY'),
+    CLAUDE_API_KEY: scriptProps.getProperty('CLAUDE_API_KEY'),
     OPENAI_API_KEY: scriptProps.getProperty('OPENAI_API_KEY'),
     WP_SITE_URL: scriptProps.getProperty('WP_SITE_URL'),
     WP_USERNAME: scriptProps.getProperty('WP_USERNAME'),
@@ -99,7 +99,7 @@ function getConfig() {
  */
 function validateConfiguration(config) {
   const required = [
-    'ANTHROPIC_API_KEY',
+    'CLAUDE_API_KEY',
     'OPENAI_API_KEY',
     'WP_SITE_URL',
     'WP_USERNAME',
@@ -118,8 +118,8 @@ function validateConfiguration(config) {
   }
 
   // Validate API keys format
-  if (!config.ANTHROPIC_API_KEY.startsWith('sk-ant-')) {
-    throw new Error('ANTHROPIC_API_KEY appears invalid (should start with sk-ant-)');
+  if (!config.CLAUDE_API_KEY.startsWith('sk-ant-')) {
+    throw new Error('CLAUDE_API_KEY appears invalid (should start with sk-ant-)');
   }
 
   if (!config.OPENAI_API_KEY.startsWith('sk-')) {
@@ -1382,7 +1382,7 @@ function generateArticlesWithClaude(context1, context2, config) {
     const response = UrlFetchApp.fetch('https://api.anthropic.com/v1/messages', {
       method: 'post',
       headers: {
-        'x-api-key': config.ANTHROPIC_API_KEY,
+        'x-api-key': config.CLAUDE_API_KEY,
         'anthropic-version': '2023-06-01',
         'content-type': 'application/json'
       },
@@ -2050,7 +2050,7 @@ function showSetupGuide() {
       <li>Scroll to "Script Properties"</li>
       <li>Add these properties:
         <ul>
-          <li>ANTHROPIC_API_KEY: Your Claude API key</li>
+          <li>CLAUDE_API_KEY: Your Claude API key</li>
           <li>OPENAI_API_KEY: Your OpenAI API key</li>
           <li>WP_SITE_URL: https://innovativeautomations.dev</li>
           <li>WP_USERNAME: Your WordPress username</li>
